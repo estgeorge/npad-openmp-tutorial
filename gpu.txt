@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --partition=gpu      <-- Nome da partição do supercomputador do NPAD onde está as gpus. 
+#SBATCH --gpus-per-node=1    <-- opcional porque o default é 1. 
+#SBATCH --cpus-per-task=1    <-- opcional porque o default é também 1. 
+#SBATCH --time=00:02:00      <-- Defina um limite para o tempo de execução total da tarefa.
+#SBATCH --job-name=pi        <-- Nome do job (opcional)
+#SBATCH --exclusive
+
+./pi
+
+
+
+
